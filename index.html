@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>Sondbox</a>
+
+        <ul class="navegação">
+            <li><a href="">Visão geral</a></li>
+            <li><a href="">Teach specs</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Contect us</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icon">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icon-->
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="img/fone2-removebg-preview.png"width="400px" class="one">
+        </div>
+
+        <div class="home-text">
+            <h1>wireless <br> bx-headphones</h1>
+            <h5>the smarter way to listen</h5>
+            <h3>$20.00</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+     </section><!--home-img-->
+
+     <div class="main">
+        <div class="row">
+            <li><img src="img/fone2-removebg-preview.png" width="50px" onclick="slider('img/fone2-removebg-preview.png')"></li>
+        </div><!--row-->    
+
+        <div class="row2">
+            <li><img src="img/img.fone2-removebg-preview.png" width="70px" onclick="slider('img/img.fone2-removebg-preview.png') "></li>
+        </div><!--row2-->  
+
+        <div class="row3">
+            <li><img src="img/img.fone4-removebg-preview.png" width="60px" onclick="slider('img/img.fone4-removebg-preview.png')"></li>
+        </div><!--row3--> 
+    </div><!--main-->
+
+
+
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+        let menu = document.querySelector ('#menu-icon');
+        let navbar = document.querySelector ('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle ('bx-x');
+            navbar.classList.toggle ('open')
+        }
+    </script>
+    
+</body>
+</html>
